@@ -10,18 +10,19 @@
 <body>
     <style>
         body{
+            background-color: rgb(183, 180, 175);
         }
         .container {
-            height: 450px;
-            width: 300px;
+         width: 300px;
             border: 2px solid black;
             margin: auto;
             border-radius: 3px;
-background-color: aliceblue;
+            background-color: rgb(221, 216, 209);
         }
 
         .img1 {
-            width: 300px;
+            width: 280px;
+            padding: 10px;
             
         }
 
@@ -45,19 +46,27 @@ background-color: aliceblue;
         }
 
         #res {
-            margin-left: 40%;
+            text-align: center;
             font-size: xx-large;
         }
+        h1{
+            text-align: center;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
     </style>
+
     <div class="container">
-        <img class="img1" src="shopping.webp">
+        <h1>Product Counter</h1>
+        <img class="img1" src="./william-hook-9e9PD9blAto-unsplash (2).jpg">
+       <div>
         <span class="btn-container">
-            <img class="img" id="img1" src="add.png" onclick="count1('inc')">
+            <img class="img" id="img1" src="minus.png" onclick="count1('dec')">
             <button class="btn">buy now</button>
-            <img class="img" id="img2" src="minus.png" onclick="count1('dec')">
+            <img class="img" id="img2" src="add.png" onclick="count1('inc')">
         </span>
         <p id="res"> 1 </p>
 
+       </div>
     </div>
     <script>
         function count1(value) {

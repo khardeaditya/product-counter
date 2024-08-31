@@ -59,7 +59,26 @@ background-color: aliceblue;
         <p id="res"> 1 </p>
 
     </div>
+    <script>
+        function count1(value) {
 
+            const res = document.getElementById('res')
+            let resElement = parseInt(res.innerText);
+            if (resElement == 5 && value == 'inc') {
+                alert('value cannot be grater than 5')
+                return;
+            }
+            else if (resElement == 1 && value == 'dec') {
+                alert('value cannot be less than 1')
+
+                return;
+            }
+            value == 'inc' ? res.innerText = ++resElement : res.innerText = --resElement
+        }
+
+
+
+    </script>
 </body>
 
 </html>
